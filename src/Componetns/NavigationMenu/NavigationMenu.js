@@ -1,16 +1,9 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FaBeer } from 'react-icons/fa'
 
 const NavigationMenu = () => {
     return (
         <nav className='flex justify-between w-full h-20 shadow-lg h-30'>
-            <div className='flex md:hidden items-center justify-ceter'>
-                <FontAwesomeIcon
-                    icon={faBars}
-                    className='text-indigo-600 text-md'
-                />
-            </div>
             <ul className='justify-evenly h-full w-full items-center pr-6 hidden md:flex'>
                 <li>
                     <a
