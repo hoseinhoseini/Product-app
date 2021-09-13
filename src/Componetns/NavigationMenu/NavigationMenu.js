@@ -1,10 +1,11 @@
 import React from 'react'
-import { FaBeer } from 'react-icons/fa'
+import { AiOutlineBars } from 'react-icons/ai'
 
 const NavigationMenu = () => {
     return (
         <nav className='flex justify-between w-full h-20 shadow-lg h-30'>
-            <ul className='justify-evenly h-full w-full items-center pr-6 hidden md:flex'>
+            <ul className='justify-evenly h-full w-full items-center pr-6 hidden md:flex sm:flex'>
+                <span></span>
                 <li>
                     <a
                         href='#'
