@@ -3,11 +3,11 @@ import { BiTimeFive } from 'react-icons/bi'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { AiOutlineMinusCircle } from 'react-icons/ai'
 import { BsPlusCircle } from 'react-icons/bs'
-import { HiOutlineShoppingCart } from 'react-icons/hi'
+import { BiTrash } from 'react-icons/bi'
 
 const Product = (props) => {
     return (
-        <div className='bg-white shadow-xl rounded-lg flex w-full m-4'>
+        <div className='bg-white shadow-2xl rounded-lg flex w-full m-4 cursor-pointer'>
             <a href='#'>
                 <div>
                     <img
@@ -30,10 +30,17 @@ const Product = (props) => {
                     </div>
 
                     <div className='flex items-center'>
-                        <AiOutlineMinusCircle
-                            className='w-6 h-6 text-indigo-500 cursor-pointer'
-                            onClick={props.decrement}
-                        />
+                        {props.quantity > 1 ? (
+                            <AiOutlineMinusCircle
+                                className='w-6 h-6 text-indigo-500 cursor-pointer'
+                                onClick={props.decrement}
+                            />
+                        ) : (
+                            <BiTrash
+                                className='w-6 h-6 text-red-600 cursor-pointer'
+                                onClick={props.decrement}
+                            />
+                        )}
 
                         <p className='mx-4 text-lg text-indigo-500'>
                             {props.quantity}

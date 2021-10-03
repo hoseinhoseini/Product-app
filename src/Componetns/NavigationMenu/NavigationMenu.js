@@ -46,6 +46,7 @@ const NavigationMenu = () => {
                         Contact us
                     </a>
                 </li>
+                <li>Your Product : {}</li>
             </ul>
         </nav>
     )
